@@ -31,6 +31,7 @@
 
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.10" />
+    <PackageReference Include="ErrorOr" Version="2.0.1" />
     <PackageReference Include="HotAvalonia" Version="1.1.0" />
     <PackageReference Include="HotAvalonia.Extensions" Version="1.1.0" />
   </ItemGroup>
@@ -45,6 +46,11 @@
 		<PackageReference Include="HotAvalonia.Extensions" Version="1.1.0" PrivateAssets="All" />
 		<PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Sandreas.Avalonia.SimpleRouter" Version="0.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\AvaloniaTemplate.ApiContracts\AvaloniaTemplate.ApiContracts.csproj" />
 	</ItemGroup>
 </Project>

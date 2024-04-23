@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaTemplate.Browser", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{D3A7FE26-A8C2-485C-ADF1-B1DEF7B598DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaTemplate.ApiContracts", "AvaloniaTemplate.ApiContracts\AvaloniaTemplate.ApiContracts.csproj", "{B5A837E5-23F3-4484-8287-59C407698DB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1AA5FCC8-36E3-4767-BAA4-F3F16319A82A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1AA5FCC8-36E3-4767-BAA4-F3F16319A82A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1AA5FCC8-36E3-4767-BAA4-F3F16319A82A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A837E5-23F3-4484-8287-59C407698DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A837E5-23F3-4484-8287-59C407698DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A837E5-23F3-4484-8287-59C407698DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A837E5-23F3-4484-8287-59C407698DB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

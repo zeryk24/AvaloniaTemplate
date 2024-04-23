@@ -1,5 +1,6 @@
 ﻿using Avalonia.SimpleRouter;
 using AvaloniaTemplate.Presentation.Second;
+using AvaloniaTemplate.Presentation.YourPage;
 using CommunityToolkit.Mvvm.Input;
 
 namespace AvaloniaTemplate.Presentation.Home;
@@ -17,5 +18,11 @@ public partial class HomeViewModel : ViewModelBase
     public void GoToSecond()
     {
         _router.GoTo<SecondViewModel>();
+    }
+
+    [RelayCommand]
+    public void GoToYours()
+    {
+        _router.GoTo<YourViewModel>();
     }
 }

@@ -7,9 +7,26 @@
              x:Class="AvaloniaTemplate.Presentation.Second.SecondView"
 			 x:DataType="vm:SecondViewModel">
 	<Grid>
-		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-			<TextBlock Text="You are on the second page!"/>
-			<Button Content="Go back" HorizontalAlignment="Center" Command="{Binding GoBack}"/>
+		<StackPanel Width="600" VerticalAlignment="Center">
+			<Border CornerRadius="10" Background="Green" Height="100" Margin="10">
+				<Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*,*">
+
+					<Panel Grid.ColumnSpan="3" Margin="10" VerticalAlignment="Center">
+						<TextBlock TextWrapping="Wrap"
+							Text="{Binding Recipe.Name}"/>
+					</Panel>
+
+					<TextBlock Text="{Binding Recipe.GroundsGrams}" Grid.Row="1" Grid.Column="1" Margin="10"/>
+					<TextBlock Text="{Binding Recipe.WaterGrams, StringFormat={}{0}g}" Grid.Row="1" Margin="10"/>
+
+
+					<TextBlock Text="{Binding Recipe.GroundSize}" Grid.Row="1" Grid.Column="2" Margin="10"/>
+					<TextBlock Text="{Binding Recipe.Time, StringFormat=mm\\:ss}" Grid.Row="1" Grid.Column="3" Margin="10"/>
+				</Grid>
+			</Border>
+			<Button Content="Go back" HorizontalAlignment="Center" Command="{Binding GoBack}" Margin="10"/>
 		</StackPanel>
+		
 	</Grid>
+			
 </UserControl>

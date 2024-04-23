@@ -9,7 +9,8 @@
 	<Grid>
 		<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
 			<TextBlock Text="Welcome to simple avalonia template, this is home page!"/>
-			<Button Content="Go to second page" HorizontalAlignment="Center" Command="{Binding GoToSecond}"/>
+			<Button Content="Go to second page" HorizontalAlignment="Center" Command="{Binding GoToSecond}" Margin="10"/>
+			<Button Content="Go to your page" HorizontalAlignment="Center" Command="{Binding GoToYours}" Margin="10"/>
 		</StackPanel>
 	</Grid>
 </UserControl>
